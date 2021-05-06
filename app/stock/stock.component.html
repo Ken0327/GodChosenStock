@@ -1,0 +1,14 @@
+<h3>Stock</h3>
+<div>
+  <!-- <label>Stock name:
+    <input #stockname />
+  </label> -->
+  <!-- <button (click)="getstock()">getStock</button> -->
+  <button (click)="getstockhistory()">getStockHistory</button>
+  <!-- <button (click)="updateToDoChart()">test update chart</button> -->
+  <div [innerHTML]="comment"></div>
+  <div>
+    <google-chart [title]="mychart.title" [type]="mychart.type" [data]="mychart.data" [columns]="mychart.columnNames"
+    [width]="mychart.width" [height]="mychart.height" [options]="mychart.options" ></google-chart>
+  </div>
+</div>
